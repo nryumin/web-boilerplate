@@ -1,0 +1,9 @@
+version: '3'
+services:
+  webpack:
+    build:
+      context: ./web
+      dockerfile: Dockerfile.webpack
+    volumes:
+       - "./web/static:/code/static"
+    command: ["npm","run","watch"]

@@ -2,4 +2,6 @@ version: '3'
 services:
   webapp:
     command: ["python","app.py","debug"]
+  webpack:
+    command: ["npm","run","watch"]
   database:

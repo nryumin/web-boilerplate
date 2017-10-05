@@ -11,7 +11,7 @@ services:
       context: ./web
       dockerfile: Dockerfile.webpack
     volumes:
-       - "./web/static:/static"
+       - "./web:/code"
   database:
     build: ./database
     ports:
