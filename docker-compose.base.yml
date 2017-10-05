@@ -1,3 +1,4 @@
+#use volumes for fe dist code
 version: '3'
 services:
   webapp:
@@ -6,12 +7,13 @@ services:
       - "5000:5000"
     volumes:
       - "./web:/code"
+      - "static:/code/static"
   webpack:
     build:
       context: ./web
       dockerfile: Dockerfile.webpack
     volumes:
-       - "./web/static:/code/static"
+       - "static:/code/static"
        - "./web/frontend:/code/frontend"
   database:
     build: ./database
@@ -20,3 +22,5 @@ services:
     volumes:
       - "./database/data:/data/db"
       - "./database/scripts:/data/scripts"
+volumes:
+  static:

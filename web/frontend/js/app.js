@@ -49,6 +49,10 @@ class App extends Component {
 const history = createHistory();
 const middleware = routerMiddleware(history);
 
+console.log("fwefwefewf324234")
+
+
+
 const store = createStore(
   combineReducers({
     ui:uiReducer,
