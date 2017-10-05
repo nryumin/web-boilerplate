@@ -4,6 +4,14 @@ services:
     build: ./web
     ports:
       - "5000:5000"
+    volumes:
+      - "./web:/code"
+  webpack:
+    build:
+      context: ./web
+      dockerfile: Dockerfile.webpack
+    volumes:
+       - "./web/static:/static"
   database:
     build: ./database
     ports:

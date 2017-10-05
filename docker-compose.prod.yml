@@ -1,0 +1,10 @@
+version: '3'
+services:
+  webapp:
+    extends:
+      file: docker-compose.base.yml
+      service: web
+  database:
+    extends:
+      file: docker-compose.base.yml
+      service: database
