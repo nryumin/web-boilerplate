@@ -1,0 +1,13 @@
+version: '3'
+services:
+  webapp:
+    build: ./web
+    ports:
+      - "5000:5000"
+  database:
+    build: ./database
+    ports:
+      - "27017:27017"
+    volumes:
+      - "./database/data:/data/db"
+      - "./database/scripts:/data/scripts"

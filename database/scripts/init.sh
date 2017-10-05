@@ -1,0 +1,1 @@
+docker-compose exec database mongo "data/scripts/init.js"
