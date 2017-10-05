@@ -6,4 +6,6 @@ services:
       dockerfile: Dockerfile.webpack
     volumes:
        - "./web/static:/code/static"
+       - "./web/frontend:/code/frontend"
     command: ["npm","run","watch"]
+    #command: ls
