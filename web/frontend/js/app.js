@@ -19,7 +19,6 @@ import RegisterBuyer from "./components/RegisterBuyer/";
 import RegisterSeller from "./components/RegisterSeller/";
 
 import "../style/style.scss"
-import model from "./redux/model";
 import Contact from "./components/Contact/index";
 
 class App extends Component {
@@ -59,7 +58,7 @@ const store = createStore(
     router: routerReducer,
     model:modelReducer
   }),
-  {ui:{showIntro: true},model:model},
+  {ui:{showIntro: true}},
   applyMiddleware(middleware)
 );
 
