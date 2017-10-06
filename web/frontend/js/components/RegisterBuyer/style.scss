@@ -1,0 +1,85 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+
+.register-buyer {
+  .rangeslider {
+    width: 400px;
+    margin: auto;
+    box-shadow: none;
+    height: 6px;
+    background: $grey-dark;
+
+    .rangeslider__fill {
+      background-color: $orange;
+      box-shadow: none;
+    }
+
+    .rangeslider__handle:after {
+      display: none;
+    }
+
+    .rangeslider__handle {
+      background-color: $orange;
+      border: none;
+      box-shadow: none;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .slider-labels {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top:20px;
+    position: relative;
+    height: 10px;
+
+    span {
+      color: $grey-dark;
+      position: absolute;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: left;
+
+      &.selected {
+        color:$orange;
+      }
+    }
+
+  }
+
+  .check-boxes {
+    .checkbox {
+      margin-right: 60px;
+
+      a {
+        display: inline-block;
+        background: white;
+        height: 18px;
+        width: 18px;
+        border-radius: 3px;
+        margin-right: 14px;
+        vertical-align: middle;
+      }
+
+      label {
+        color:$grey-dark;
+        font-size: 16px;
+        vertical-align: middle;
+        position: relative;
+        top:2px;
+      }
+
+      &.selected {
+        label {color:$orange}
+        a {
+          background-image: url(./images/checkbox.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}

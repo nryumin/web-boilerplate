@@ -1,0 +1,131 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+
+.franchise-list {
+  $item-width: 322px;
+  $item-margin: calc((100% - #{$item-width}*3)/3);
+
+  .item {
+    width: $item-width;
+    border: 1px solid $grey-light;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 26px;
+    display: inline-block;
+
+    &:nth-child(3n+1) {
+      margin-right: $item-margin;
+    }
+
+    &:nth-child(3n+2) {
+      margin-right: $item-margin;
+    }
+
+    .share-btn,.like-btn {
+      position: absolute;
+      top:8px;
+      display: inline-block;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .share-btn {
+      right: 8px;
+    }
+
+    .like-btn {
+      right: 32px;
+    }
+
+    .invest-project {
+      position: absolute;
+      color:white;
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 10px 14px;
+      border-radius: 20px;
+      background: $grey-dark;
+      right: 10px;
+      top: 200px;
+      transform: translate(0,-50%);
+      letter-spacing: 0.4px;
+    }
+
+    .area {
+      position: absolute;
+      top: 0px;
+      left: 18px;
+      padding: 12px 18px;
+      background: $grey-light;
+      color: black;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      font-weight: 500;
+    }
+
+    .pic {
+      height: 200px;
+      background-size: cover;
+    }
+
+    .info {
+      padding: 0px 18px;
+      color: $grey-dark;
+      img {
+        vertical-align: middle;
+      }
+
+      .location {
+        font-size: 12px;
+        margin-top: 12px;
+      }
+
+      h4 {
+        text-transform: uppercase;
+        color: $black;
+        font-size: 16px;
+        letter-spacing: 1.2px;
+        margin-top: 17px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-top: 8px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+      }
+
+      .price {
+        text-align: right;
+        font-size: 24px;
+        color: $black;
+        font-weight: bold;
+        margin-top: 22px;
+
+      }
+
+      .more {
+        margin-top: 20px;
+        text-align: right;
+
+        a {
+          color: $orange;
+          text-transform: uppercase;
+          letter-spacing: 0.4px;
+          font-size: 12px;
+          font-weight: 800;
+
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+
+      }
+    }
+  }
+}

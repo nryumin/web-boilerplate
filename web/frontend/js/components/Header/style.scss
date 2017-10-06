@@ -1,0 +1,85 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+
+header {
+  height: 35px;
+  margin: 18px;
+  display: flex;
+
+  .logo {
+    display: block;
+
+    img {
+      height: 35px;
+    }
+  }
+
+  .header-links {
+    @include vertical-middle();
+
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 35px;
+    padding-left: 35px;
+    border-left: 2px solid $grey-light;
+    height: 100%;
+
+    li {
+      display: inline-block;
+      margin-right: 26px;
+
+      a {
+        letter-spacing: 1px;
+        padding: 2px;
+        cursor:pointer;
+
+        &.selected {
+          border-bottom: 1px solid $black;
+        }
+      }
+    }
+  }
+
+  .empty-space {
+    flex:1;
+  }
+
+  .social-links {
+    display: block;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    margin-right: 35px;
+    @include vertical-middle();
+
+    li {
+      display: inline-block;
+      margin-left: 10px;
+
+      img {
+        width: 24px;
+      }
+    }
+  }
+
+  .user-link {
+    height: 100%;
+    @include vertical-middle();
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    img {
+      width: 18px;
+      margin-left: 18px;
+      margin-right: 4px;
+    }
+  }
+}
+

@@ -1,0 +1,151 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+@import "../../../style/buttons";
+
+.franchise-catalog {
+
+  .filters-container {
+    padding: 56px 100px;
+    background:url(./back_filter.png);
+
+    h2 {
+      color: $orange;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin: 0px;
+    }
+
+    h3 {
+      color: $grey;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .Dropdown-root {
+        position: relative;
+        color: $grey-dark;
+        background: $grey-lighter;
+        width: 214px;
+        display: block;
+        vertical-align: middle;
+        cursor: pointer;
+
+        .Dropdown-control {
+          padding: 18px;
+          position: relative;
+
+          .Dropdown-arrow {
+            position: absolute;
+            right: 18px;
+            top: 22px;
+            border: 3px solid transparent;
+            border-top-color: $grey;
+          }
+        }
+
+        .Dropdown-menu {
+          position: absolute;
+          top: calc(100% + 4px);
+          background: $grey-lighter;
+          width: 100%;
+          @include shadow;
+
+          .Dropdown-option {
+            padding: 18px;
+
+            &:hover {
+              background: $grey-dark;
+              color: $black;
+            }
+          }
+        }
+      }
+
+      .more {
+        display: block;
+        padding: 16px 11px;
+        color: $orange;
+        border: 1px solid $orange;
+        background: transparent;
+        text-transform: uppercase;
+        font-weight: 500;
+        vertical-align: middle;
+
+        span {
+          position: relative;
+          top: 4px;
+        }
+
+        &:hover {
+          background: $orange;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      .submit {
+        display: block;
+        padding: 16px 48px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 24px;
+        letter-spacing: 1px;
+        color: white;
+        border: none;
+        background: $orange;
+        vertical-align: middle;
+        text-transform: uppercase;
+        border: 1px solid $orange;
+
+        span {
+          position: relative;
+          top: 2px;
+        }
+
+        &:hover {
+          background: transparent;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+
+  .results {
+    padding: 24px 100px;
+
+    &.top {
+      background: $grey-lighter;
+
+      .item {
+        background: white;
+      }
+    }
+
+    .results-count {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-top: 0px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .more-btn {
+    @include orange-btn;
+    display: block;
+    margin: auto;
+    width: 192px;
+    padding: 16px 28px;
+  }
+}

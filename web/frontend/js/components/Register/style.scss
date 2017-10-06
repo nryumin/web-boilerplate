@@ -1,0 +1,91 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+
+.register {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #011530;
+  color:white;
+  text-align: center;
+
+  h1 {
+    font-weight: 400;
+    margin-top: 180px;
+    font-size: 21px;
+    letter-spacing: 1.25px;
+    line-height: 26px;
+  }
+
+  .question {
+    margin-top: 124px;
+    font-size: 27px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+  }
+
+  .btns {
+    margin-top: 38px;
+
+    a {
+      padding: 16px 0px;
+      width: 186px;
+      display: inline-block;
+      border:1px solid white;
+      text-transform: uppercase;
+      color:white;
+      margin-right: 20px;
+      letter-spacing: 0.3px;
+      font-weight: 500;
+
+      &:hover {
+        border-color: $orange;
+        color: $orange;
+      }
+    }
+  }
+
+  .step-counter {
+    position: absolute;
+    bottom:120px;
+    left:50%;
+    transform: translate(-50%);
+
+    .number {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      color:$grey-dark;
+      border: 1px solid $grey-dark;
+      border-radius: 15px;
+      position: relative;
+      margin-right: 20px;
+      line-height: 34px;
+      font-size: 13px;
+      vertical-align: middle;
+
+      &.selected {
+        height: 40px;
+        width: 40px;
+        color:white;
+        border-color: white;
+        border-radius: 20px;
+        font-size: 23px;
+        line-height: 44px;
+      }
+    }
+
+    .number:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      left:100%;
+      top:50%;
+      display: inline-block;
+      height: 1px;
+      width: 21px;
+      background: $grey-dark;
+    }
+  }
+}

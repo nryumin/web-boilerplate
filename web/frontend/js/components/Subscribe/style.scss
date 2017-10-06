@@ -1,0 +1,46 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+
+.subscribe {
+  .email-form {
+    input {
+      padding: 14px 18px;
+      vertical-align: middle;
+      margin-right: 12px;
+      display: inline-block;
+      width: 320px;
+    }
+
+    input::placeholder {
+      color:$grey;
+    }
+
+    a {
+      display: block;
+      padding: 16px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 24px;
+      letter-spacing: 1.4px;
+      color: white;
+      border: none;
+      background: $orange;
+      vertical-align: middle;
+      text-transform: uppercase;
+      border: 1px solid $orange;
+      display: inline-block;
+      margin-right: 24px;
+
+      span {
+        position: relative;
+        top: 2px;
+      }
+
+      &:hover {
+        background: transparent;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

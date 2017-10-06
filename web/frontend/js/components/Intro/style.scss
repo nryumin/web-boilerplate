@@ -1,0 +1,105 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+
+.intro {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #011530;
+
+  .content {
+    width: 1200px;
+    margin: auto;
+    color: white;
+    padding-top: 286px;
+
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    img.mask {
+      position: absolute;
+      left: calc(50% + 100px);
+      top: 236px;
+      width: 600px;
+    }
+
+    img.logo {
+      display: block;
+      width: 300px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0px;
+      font-size: 43px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      line-height: 54px;
+      margin-bottom: 24px;
+      width: 600px;
+    }
+
+    a.register {
+      display: block;
+      padding: 16px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 24px;
+      letter-spacing: 1.4px;
+      color: white;
+      border: none;
+      background: $orange;
+      vertical-align: middle;
+      text-transform: uppercase;
+      border: 1px solid $orange;
+      display: inline-block;
+      margin-right: 24px;
+      position: relative;
+      top: -3px;
+
+      span {
+        position: relative;
+        top: 2px;
+      }
+
+      &:hover {
+        background: transparent;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    span.or {
+      font-size: 14px;
+      font-weight: 300;
+      margin-right: 16px;
+    }
+
+    a.login {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1.4px;
+    }
+  }
+
+  a.skip-intro {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 100px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    color: $grey-dark;
+  }
+
+}

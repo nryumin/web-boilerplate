@@ -1,0 +1,51 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+
+footer {
+  margin-top: 50px;
+  padding: 0px 100px;
+
+  .logo {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 96px;
+
+    img {
+      height: 35px;
+    }
+  }
+
+  h4 {
+    margin-top: 7px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .site-map {
+    display: inline-block;
+    vertical-align: top;
+
+    a {
+      display: inline-block;
+      width: 170px;
+      color: $grey-dark;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  }
+
+  .social-links {
+    display: inline-block;
+
+    img {
+      width: 24px;
+    }
+
+    a {
+      margin-right: 12px;
+    }
+  }
+}
+

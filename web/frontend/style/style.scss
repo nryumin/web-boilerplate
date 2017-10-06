@@ -1,0 +1,80 @@
+@import "vars";
+
+body {
+  margin: 0px;
+  font-family: Muller;
+  font-size: 12px;
+  color: $black;
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+*{
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+#root {
+  width: 1200px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerHairline.otf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerThin.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerUltraLight.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerLight.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerRegular.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerMedium.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerBold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerExtraBold.otf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url('../fonts/MullerHeavy.otf');
+  font-weight: 900;
+}
+

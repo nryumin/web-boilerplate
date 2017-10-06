@@ -1,0 +1,49 @@
+@import "../../../style/vars";
+@import "../../../style/helpers";
+
+.register-seller {
+  .form {
+    width: 316px;
+    margin: auto;
+
+    input {
+      padding: 14px 18px;
+      display: block;
+      margin-bottom: 12px;
+      width: 100%;
+    }
+
+    input::placeholder {
+      color: $grey;
+    }
+
+    a {
+      display: block;
+      padding: 16px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 24px;
+      letter-spacing: 1.4px;
+      color: white;
+      border: none;
+      background: $orange;
+      vertical-align: middle;
+      text-transform: uppercase;
+      border: 1px solid $orange;
+      display: inline-block;
+      margin-right: 24px;
+      width: 100%;
+
+      span {
+        position: relative;
+        top: 2px;
+      }
+
+      &:hover {
+        background: transparent;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
