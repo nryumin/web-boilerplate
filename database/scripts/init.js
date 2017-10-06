@@ -1,29 +1,40 @@
-print("Start script");
-
+print("Start init");
 
 conn = new Mongo();
 
-/*db = conn.getDB("admin");
+db = conn.getDB("admin");
 db.createUser(
   {
     user: "admin",
-    pwd: "admin123",
+    pwd: "admin",
     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
   }
-);*/
+);
+
+db.auth("admin", "admin");
 
 db = conn.getDB("pitchme");
-db.createCollection("users");
-db.users.insert({
-    username: "test1",
-    password: "123"
-});
 
-db = conn.getDB("pitchme");
-db.createCollection("users");
-db.users.insert({
-    username: "test1",
-    password: "123"
-});
+db.createUser(
+  {
+    user: "admin",
+    pwd: "admin",
+    roles: [ { role: "userAdmin", db: "pitchme" } ]
+  }
+);
 
-print("end script");
+db.auth("admin", "admin");
+
+db.createUser(
+  {
+    user: "writer",
+    pwd: "writer",
+    roles: [ { role: "readWrite", db: "pitchme" } ]
+  }
+);
+
+db.auth("writer", "writer");
+
+db.createCollection("users");
+
+print("End script");

@@ -2,6 +2,8 @@ version: '3'
 services:
   webapp:
     command: ["python","app.py","debug"]
+    environment:
+      - PYTHONUNBUFFERED=0
   webpack:
     command: ["npm","run","watch"]
   database:
